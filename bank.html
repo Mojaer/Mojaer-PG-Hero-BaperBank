@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl text-center mt-6 mb-10">Let's have some <span class="text-red-500 font-semibold">Money</span>
+    </h1>
+    <section class="mt-12">
+        <div class=" grid grid-cols-3 gap-x-5 w-9/12 mx-auto">
+            <div class="bg-green-600 text-white p-8 rounded-xl">
+                <h1 class="text-4xl mb-3">Deposit</h1>
+                <p class="text-5xl">$<span id="depositAmount">00</span> </p>
+            </div>
+            <div class="bg-red-500 text-white p-8 rounded-xl">
+                <h1 class="text-4xl mb-3">Withdraw</h1>
+                <p class="text-5xl">$<span id="withdrawAmount">00</span> </p>
+            </div>
+            <div class="bg-blue-500 text-white p-8 rounded-xl">
+                <h1 class="text-4xl mb-3">Balance</h1>
+                <p class="text-5xl">$<span id="balanceAmount">1240</span> </p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="mt-12">
+        <div class=" grid grid-cols-2 gap-x-5 w-9/12 mx-auto">
+            <div class="bg-blue-500 text-white p-9 rounded-xl">
+                <h1 class="text-4xl mb-3">Please Deposit</h1>
+                <input type="number" id="deposit" class=" w-4/5 rounded mb-3 p-2 text-black font-semibold"
+                    placeholder="enter amount"><br>
+                <button type="submit" id="deposit-btn"
+                    class="p-2 rounded bg-red-800 hover:bg-red-600 text-white">Deposit</button>
+
+            </div>
+            <div class="bg-pink-500 text-white p-9 rounded-xl">
+                <h1 class="text-4xl mb-3">Please Withdraw</h1>
+                <input type="number" id="withdraw" class=" w-4/5 rounded mb-3 p-2 text-black font-semibold"
+                    placeholder="enter amount"><br>
+                <button type="submit" id="withdraw-btn"
+                    class="p-2 rounded bg-red-800 text-white hover:bg-red-600 ">Withdraw</button>
+
+            </div>
+        </div>
+    </section>
+    <script src="/Transection.js"></script>
+</body>
+
+</html>
